@@ -138,7 +138,9 @@ def do_backtest(
         else:
             result_dict["回测结果"][date] = f"目前持有{holding}单位的头寸, 以当日收盘价{round(close_price,2)}美元计算, 头寸的价值为{holding_value}"
 
-    result_dict["回测结果"]["总结"] = f"总盈利(以当日收盘价平仓)为{holding*test_df.iloc[-1]['Close'] + sell_value - cost}"
+    del result_dict["回测结果"]
+
+    result_dict["回测总结"] = f"总盈利(以当日收盘价平仓)为{holding*test_df.iloc[-1]['Close'] + sell_value - cost}"
         # print(f"{date}, holding amount: {holding}, holding value: {holding_value}, sell value: {sell_value}, cost: {cost}")
         # print('-'*30)
     # print(f'total profit = {holding*test_df.iloc[-1]['Close'] + sell_value - cost}')
@@ -304,7 +306,10 @@ def do_backtest_portfolio(
             result_dict["回测结果"][date] = f"目前持有{holding}单位的头寸, 以当日收盘价{round(close_price,2)}美元计算, 头寸的价值为{holding_value}"
         
 
-    result_dict["回测结果"]["总结"] = f"总盈利(以当日收盘价平仓)为{holding*test_df.iloc[-1]['Close'] + sell_value - cost}"
+    del result_dict["回测结果"]
+
+
+    result_dict["回测总结"] = f"总盈利(以当日收盘价平仓)为{holding*test_df.iloc[-1]['Close'] + sell_value - cost}"
 
 
     return result_dict
