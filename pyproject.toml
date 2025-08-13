@@ -1,0 +1,11 @@
+[project]
+name = "mcp-backtest"
+version = "0.1.0"
+description = "Backtest mean reversion strategy for an asset or a portfolio."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "mcp[cli]>=1.12.4",
+    "statsmodels>=0.14.5",
+    "yfinance>=0.2.65",
+]
