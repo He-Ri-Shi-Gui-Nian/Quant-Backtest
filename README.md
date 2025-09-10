@@ -64,8 +64,44 @@ Retrieve historical market data (open, close, high, low, volume) for a specified
 
 ---
 
-## 下载代码
+## 部署代码 Deployment
 
 ```bash
 git clone https://github.com/He-Ri-Shi-Gui-Nian/Quant-Backtest.git
 cd Quant-Backtest
+```
+---
+
+## 安装依赖 Dependencies
+
+```bash
+uv sync
+```
+
+## 在 Cherry Studio 中连接 MCP 服务器
+1. 打开 Cherry Studio
+2.	设置 -> MCP 设置 -> 添加服务器 -> 从 JSON 导入
+3.	粘贴以下 JSON 字段
+4.	点击确定 -> 打开开关 -> MCP 服务器名称右侧出现绿色对勾
+
+```json
+{
+  "mcpServers": {
+    "backtest": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "此处填写 main.py 的绝对路径",
+        "run",
+        "main.py"
+      ]
+    }
+  }
+}
+```
+
+## 在 Cherry Studio 中使用 MCP tools
+
+打开聊天界面（聊天框最下方）-> MCP 设置 -> 点击 MCP 服务器的名称 -> 开始对话
+
+
