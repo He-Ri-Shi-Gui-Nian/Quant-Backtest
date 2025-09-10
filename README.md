@@ -99,7 +99,7 @@ uv sync
       "command": "uv",
       "args": [
         "--directory",
-        "此处填写 main.py 的绝对路径",  // Replace this with the absolute path to main.py
+        "此处填写 main.py 的绝对路径 / Replace this with the absolute path to main.py",  
         "run",
         "main.py"
       ]
@@ -111,5 +111,6 @@ uv sync
 ## 在 Cherry Studio 中使用 MCP tools / Using MCP Tools in Cherry Studio
 
 打开聊天界面（聊天框最下方）-> MCP 设置 -> 点击 MCP 服务器的名称 -> 开始对话
+
 Open the chat panel (at the bottom of the screen) → Go to MCP Settings → Click the MCP server name → Start chatting
 
