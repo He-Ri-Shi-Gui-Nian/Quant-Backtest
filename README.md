@@ -1,4 +1,4 @@
-# 量化交易回测工具 Quant-Backtest Tool
+# 量化交易回测工具 / Quant-Backtest Tool
 对单个金融资产或投资组合进行均值回归策略的回测
 Backtest 
 
@@ -6,7 +6,7 @@ mean reversion strategy for an asset or a portfolio
 
 ---
 
-# 使用说明 Instructions 
+# 使用说明 / Instructions 
 
 本项目实现了一个 MCP 服务器[^MCP]，用于回测不可卖空的均值回归策略（持有与当前价格偏离滑动平均数的滑动标准差倍数成比例的多头头寸），可在单个金融资产或投资组合上运行。
 
@@ -14,7 +14,7 @@ This project implements an MCP (Model Context Protocol) server[^MCP] for backtes
 
 [^MCP]: [什么是MCP服务器？What is a MCP server?](https://modelcontextprotocol.io/docs/getting-started/intro)
 
-## MCP 工具 MCP tools
+## MCP 工具 / MCP tools
 
 ### `get_strategy_types`
 列出当前 MCP 支持的策略类型（单资产均值回归和投资组合均值回归）。
@@ -48,7 +48,7 @@ Retrieve historical market data (open, close, high, low, volume) for a specified
 
 ---
 
-## 环境准备 Setting Up Environment 
+## 环境准备 / Environment Setup
 
 - 安装 Python 3.13+  
   Install Python 3.13+
@@ -64,7 +64,7 @@ Retrieve historical market data (open, close, high, low, volume) for a specified
 
 ---
 
-## 部署代码 Deployment
+## 部署代码 / Deployment
 
 ```bash
 git clone https://github.com/He-Ri-Shi-Gui-Nian/Quant-Backtest.git
@@ -72,17 +72,25 @@ cd Quant-Backtest
 ```
 ---
 
-## 安装依赖 Dependencies
+## 安装依赖 / Dependencies
 
 ```bash
 uv sync
 ```
 
-## 在 Cherry Studio 中连接 MCP 服务器
-1. 打开 Cherry Studio
-2.	设置 -> MCP 设置 -> 添加服务器 -> 从 JSON 导入
-3.	粘贴以下 JSON 字段
-4.	点击确定 -> 打开开关 -> MCP 服务器名称右侧出现绿色对勾
+## 在 Cherry Studio 中连接 MCP 服务器 / Connecting to MCP Server in Cherry Studio
+
+1. 打开 Cherry Studio  
+   Open Cherry Studio  
+
+2. 设置 → MCP 设置 → 添加服务器 → 从 JSON 导入  
+   Go to *Settings* → *MCP Settings* → *Add Server* → *Import from JSON*  
+
+3. 粘贴以下 JSON 字段  
+   Paste the following JSON configuration  
+
+4. 点击“确定” → 打开开关 → MCP 服务器名称右侧出现绿色对勾  
+   Click "OK" → Toggle the switch → A green check mark will appear next to the server name  
 
 ```json
 {
@@ -91,7 +99,7 @@ uv sync
       "command": "uv",
       "args": [
         "--directory",
-        "此处填写 main.py 的绝对路径",
+        "此处填写 main.py 的绝对路径",  // Replace this with the absolute path to main.py
         "run",
         "main.py"
       ]
@@ -100,8 +108,8 @@ uv sync
 }
 ```
 
-## 在 Cherry Studio 中使用 MCP tools
+## 在 Cherry Studio 中使用 MCP tools / Using MCP Tools in Cherry Studio
 
 打开聊天界面（聊天框最下方）-> MCP 设置 -> 点击 MCP 服务器的名称 -> 开始对话
-
+Open the chat panel (at the bottom of the screen) → Go to MCP Settings → Click the MCP server name → Start chatting
 
