@@ -51,16 +51,16 @@ Retrieve historical market data (open, close, high, low, volume) for a specified
 ## 环境准备 Setting Up Environment 
 
 - 安装 Python 3.13+  
-  *Install Python 3.13+*
+  Install Python 3.13+
 
 - 安装 uv  
-  *Install uv*
+  Install uv
 
 - 下载 Cherry Studio  
-  *Download Cherry Studio*
+  Download Cherry Studio
 
 - 获取 Google Gemini API key  
-  *Obtain Google Gemini API key*
+  Obtain Google Gemini API key
 
 ---
 
