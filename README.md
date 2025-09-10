@@ -11,7 +11,7 @@ This project implements an MCP (Model Context Protocol) server[^MCP] for backtes
 
 [^MCP]: [什么是MCP服务器？What is a MCP server?](https://modelcontextprotocol.io/docs/getting-started/intro)
 
-## MCP 工具列表 MCP tools
+## MCP 工具 MCP tools
 
 ### `get_strategy_types`
 列出当前 MCP 支持的策略类型（单资产均值回归和投资组合均值回归）。
@@ -39,12 +39,12 @@ Retrieve historical market data (open, close, high, low, volume) for a specified
 
 ---
 
-## 环境准备
+## 环境准备 Setting Up Environment 
 
-- 安装 Python 3.13+
-- 安装 uv
-- 下载 Cherry Studio
-- 获取 Google Gemini API
+- 安装 Python 3.13+  Install Python 3.13+
+- 安装 uv  Install uv
+- 下载 Cherry Studio  Download Cherry Studio
+- 获取 Google Gemini API key  Obtain Google Gemini API key
 
 ---
 
