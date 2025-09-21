@@ -1,8 +1,7 @@
-# 量化交易回测工具 / Quant-Backtest Tool
+# 量化交易回测工具 / Quant-Backtest Tool [^蓝耕科技]
 对单个金融资产或投资组合进行均值回归策略的回测
-Backtest 
-
-mean reversion strategy for an asset or a portfolio
+Backtest mean reversion strategy for an asset or a portfolio
+[^蓝耕科技]: 参与蓝耕AI系列赛事-蓝耕杯MCP开发挑战赛，进入复赛。链接：https://mcp.lanyun.net/\#/productDetail?id=3463
 
 ---
 
